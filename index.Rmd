@@ -162,10 +162,18 @@ crimesByNeigh=tapply(crime$crimecat, crime$Neighborhood, length)%>%
                      prop.table()%>%
                      "*"(100)%>% 
                      round(2) 
+crimesByNeigh=tapply(crime$crimecat, crime$Neighborhood, length)%>%      
+                     prop.table()%>%
+                     "*"(100)%>% 
+                     round(2) 
+head(crimesByNeigh)
+
+
 ```
 
 ```{r transpose, eval=TRUE}
 library(tibble)
+as.data.frame(daysByNeigh)%>%rownames_to_column()
 ```
 
 ```{r merge, eval=TRUE}
