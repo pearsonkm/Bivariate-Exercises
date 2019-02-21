@@ -1,6 +1,8 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_document:
+    df_print: paged
 ---
 title: "Bivariate Exercises: 1-4"
 output: html_notebook
@@ -164,7 +166,6 @@ crimesByNeigh=tapply(crime$crimecat, crime$Neighborhood, length)%>%
 
 ```{r transpose, eval=TRUE}
 library(tibble)
-as.data.frame(daysByNeigh)%>%rownames_to_column()
 ```
 
 ```{r merge, eval=TRUE}
