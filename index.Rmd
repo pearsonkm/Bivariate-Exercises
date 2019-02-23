@@ -1,5 +1,5 @@
 <a id='ex1'></a>
-<span style="color:red"> Exercise 1:<br> Turn the bars into lollipop plot with the right components.
+<span style="color:black"> Exercise 1:<br> Turn the bars into lollipop plot with the right components.
 </span>
 
 ```{r data, eval=TRUE}
@@ -58,7 +58,9 @@ lolliplot5
 
 
 ```
-Exercise 2: Change the heatplot to ascending order, where intensity goes from yellow to purple.
+<a id='ex1'></a> 
+<span style="color:black"> Exercise 2: Change the heatplot to ascending order, where intensity goes from yellow to purple. 
+</span>
 
 ```{r heatplot, eval=TRUE}
 base  = ggplot(df.T, aes(x = Daytime, y = reorder(Crime, - Percent), fill = Percent)) 
@@ -76,7 +78,8 @@ heat4 + labs(title = "Theft is the Most Popular Crime, Occurring Most in the Aft
                                               Gambling, Homicide, Narcotic, Pornography, Rape, Robbery, and 7 Other Crimes", x="Crime", y="Time of Day")
 ```
 
-#Exercise 3: Complete the information needed in the previous plots.
+<a id='ex1'></a> 
+<span style="color:black"> Exercise 3: Complete the information needed in the previous plots. </span>
 
 ```{r CrimeReportData, eval=TRUE}
 # Crimes reported after a year 
@@ -95,7 +98,9 @@ crimeYearGG2=crimeWeek[complete.cases(crimeWeek$WeeksToReport) &complete.cases(c
 
 ```
 
-Below is the plot for crimes reported after one year, organized by type of crime. 
+<a id='ex1'></a> 
+<span style="color:black"> Below is the plot for crimes reported after one year, organized by type of crime. 
+</span>
 
 ```{r CrimeYear, eval=TRUE}
 base= ggplot(crimeYearGG,
@@ -116,7 +121,9 @@ all3 + coord_flip() + labs(title="Other Crimes Are Reported Later More Frequentl
                                               Gambling, Homicide, Narcotic, Pornography, Rape, Robbery, and 7 Other Crimes", x="Crimes", y="Years to Report")
 ```
 
-The next plot is of crimes that took longer than a week to report, organized by crime. 
+<a id='ex1'></a> 
+<span style="color:black"> The next plot is of crimes that took longer than a week to report, organized by crime. 
+</span>
 
 ```{r CrimeWeeks, eval=TRUE}
 base = ggplot(crimeYearGG2,
@@ -137,7 +144,9 @@ all3+coord_flip() + labs(title="Crimes Reported Less Than A Year from Date of Cr
                                               Gambling, Homicide, Narcotic, Pornography, Rape, Robbery, and 7 Other Crimes", x="Crimes", y="Weeks to Report")
 ```
 
-Exercise 4: Complete the elements missing in the scatterplot of proportion of crimes by neighborhood and days to report crimes by neighborhood. 
+<a id='ex1'></a> 
+<span style="color:black"> Exercise 4: Complete the elements missing in the scatterplot of proportion of crimes by neighborhood and days to report crimes by neighborhood. 
+</span> 
 
 ```{r byNeigh, eval=TRUE}
 daysByNeigh=tapply(crime$DaysToReport, crime$Neighborhood, mean,na.rm=T)
