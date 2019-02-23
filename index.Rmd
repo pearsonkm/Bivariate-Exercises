@@ -58,7 +58,8 @@ lolliplot5
 
 
 ```
-<a id='ex1'></a> 
+
+<a id='ex2'></a> 
 <span style="color:black"> Exercise 2: Change the heatplot to ascending order, where intensity goes from yellow to purple. 
 </span>
 
@@ -78,7 +79,7 @@ heat4 + labs(title = "Theft is the Most Popular Crime, Occurring Most in the Aft
                                               Gambling, Homicide, Narcotic, Pornography, Rape, Robbery, and 7 Other Crimes", x="Crime", y="Time of Day")
 ```
 
-<a id='ex1'></a> 
+<a id='ex3'></a> 
 <span style="color:black"> Exercise 3: Complete the information needed in the previous plots. </span>
 
 ```{r CrimeReportData, eval=TRUE}
@@ -98,7 +99,7 @@ crimeYearGG2=crimeWeek[complete.cases(crimeWeek$WeeksToReport) &complete.cases(c
 
 ```
 
-<a id='ex1'></a> 
+<a id='ex3'></a> 
 <span style="color:black"> Below is the plot for crimes reported after one year, organized by type of crime. 
 </span>
 
@@ -121,7 +122,7 @@ all3 + coord_flip() + labs(title="Other Crimes Are Reported Later More Frequentl
                                               Gambling, Homicide, Narcotic, Pornography, Rape, Robbery, and 7 Other Crimes", x="Crimes", y="Years to Report")
 ```
 
-<a id='ex1'></a> 
+<a id='ex3'></a> 
 <span style="color:black"> The next plot is of crimes that took longer than a week to report, organized by crime. 
 </span>
 
@@ -144,7 +145,7 @@ all3+coord_flip() + labs(title="Crimes Reported Less Than A Year from Date of Cr
                                               Gambling, Homicide, Narcotic, Pornography, Rape, Robbery, and 7 Other Crimes", x="Crimes", y="Weeks to Report")
 ```
 
-<a id='ex1'></a> 
+<a id='ex4'></a> 
 <span style="color:black"> Exercise 4: Complete the elements missing in the scatterplot of proportion of crimes by neighborhood and days to report crimes by neighborhood. 
 </span> 
 
