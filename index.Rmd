@@ -171,7 +171,8 @@ base = ggplot(num_num, aes(daysByNeigh,crimesByNeigh,label=rowname))
 plot1= base +  geom_point() 
 plot2= plot1 + geom_text_repel(aes(label=ifelse(crimesByNeigh>=5, 
                                          num_num$rowname, ""))) 
-plot2
+plot3= plot2 + labs(title = "Downtown Seattle Experiences More Crimes But Reports Quickly", subtitle = sourceText, x = "Days to Report", y = "Perecentage of Crimes")
+plot3
 ```
 
 ```{r hexbin, eval=TRUE}
